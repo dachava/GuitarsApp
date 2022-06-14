@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "823671483639",
+    "project_id": "guitars-4c0b8",
+    "storage_bucket": "guitars-4c0b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823671483639:android:1fac6d162bb946ec6ef7f2",
+        "android_client_info": {
+          "package_name": "com.example.guitars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823671483639-4mp8a2o7idtf6ns9ngor6fmb26q3i4n8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt7nQVuXsZ8jA1otODDptz1iusndMvKr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823671483639-4mp8a2o7idtf6ns9ngor6fmb26q3i4n8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
