@@ -1,4 +1,4 @@
-package com.example.guitars.ui.home
+package com.example.guitars.ui.guitar
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.guitars.databinding.FragmentHomeBinding
+import com.example.guitars.databinding.FragmentGuitarBinding
+import com.example.guitars.viewmodel.GuitarViewModel
 
-class HomeFragment : Fragment() {
+class GuitarFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentGuitarBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,16 +23,16 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val guitarViewModel =
+            ViewModelProvider(this).get(GuitarViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentGuitarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        //val textView: TextView = binding.textHome
+        //guitarViewModel.text.observe(viewLifecycleOwner) {
+           // textView.text = it
+        //}
         return root
     }
 
