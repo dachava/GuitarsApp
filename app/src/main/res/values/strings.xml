@@ -20,5 +20,7 @@
     <string name="msg_precio">Precio</string>
     <string name="msg_correo">Correo</string>
     <string name="msg_telefono">Teléfono</string>
+    <string name="msgGuitarAgregado">Guitarra agregada</string>
+    <string name="msgFaltanDatos">Faltan datos</string>
     <string name="bt_agregar">Agregar</string>
 </resources>
