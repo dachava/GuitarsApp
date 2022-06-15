@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.guitars.R
 import com.example.guitars.databinding.FragmentGuitarBinding
 import com.example.guitars.viewmodel.GuitarViewModel
 
@@ -27,13 +29,11 @@ class GuitarFragment : Fragment() {
             ViewModelProvider(this).get(GuitarViewModel::class.java)
 
         _binding = FragmentGuitarBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        binding.fbAgregar.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_guitar_to_addGuitarFragment)
+        }
 
-        //val textView: TextView = binding.textHome
-        //guitarViewModel.text.observe(viewLifecycleOwner) {
-           // textView.text = it
-        //}
-        return root
+        return binding.root
     }
 
     override fun onDestroyView() {

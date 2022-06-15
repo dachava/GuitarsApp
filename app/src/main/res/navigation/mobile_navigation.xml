@@ -9,7 +9,11 @@
         android:id="@+id/nav_guitar"
         android:name="com.example.guitars.ui.guitar.GuitarFragment"
         android:label="@string/menu_guitar"
-        tools:layout="@layout/fragment_guitar" />
+        tools:layout="@layout/fragment_guitar" >
+        <action
+            android:id="@+id/action_nav_guitar_to_addGuitarFragment"
+            app:destination="@id/addGuitarFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.example.guitars.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addGuitarFragment"
+        android:name="com.example.guitars.ui.guitar.AddGuitarFragment"
+        android:label="fragment_add_guitar"
+        tools:layout="@layout/fragment_add_guitar" >
+        <action
+            android:id="@+id/action_addGuitarFragment_to_nav_guitar"
+            app:destination="@id/nav_guitar" />
+    </fragment>
 </navigation>

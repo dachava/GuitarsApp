@@ -13,4 +13,12 @@
     <string name="menu_guitar">Guitars</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_marca">Marca</string>
+    <string name="msg_modelo">Modelo</string>
+    <string name="msg_precio">Precio</string>
+    <string name="msg_correo">Correo</string>
+    <string name="msg_telefono">Teléfono</string>
+    <string name="bt_agregar">Agregar</string>
 </resources>
